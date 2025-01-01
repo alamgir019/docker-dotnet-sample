@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Read a variable
-        run: echo "My app id value is ${{ vars.DOCKER_USERNAME}}"
+        run: echo "My app id value is ${{ vars.DOCKER_USERNAME }}"
+      - name: Tell me the secret
+        run: echo "My secret value is ${{ secrets.DOCKERHUB_TOKEN }}"
