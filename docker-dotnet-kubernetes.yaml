@@ -26,7 +26,7 @@ spec:
               'until nc -zv db 5432; do echo "waiting for db"; sleep 2; done;',
             ]
       containers:
-        - image: DOCKER_USERNAME/REPO_NAME
+        - image: alamgir0195/docker-dotnet-sample
           name: server
           imagePullPolicy: Always
           ports:
